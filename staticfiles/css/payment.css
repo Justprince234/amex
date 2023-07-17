@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "New York", Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;;
+}
+nav{
+    font-family: "New York", Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;;
+}
+.navbar-brand img{
+    width: 3rem;
+} 
+nav form a{
+    margin-right: 2rem;
+    text-decoration: none;
+    color: rgba(77, 77, 77, 0.75);
+    font-size: 1.2rem;
+    display: inline-block;
+}
+.nav-item{
+    margin-left: 2rem ;
+}
+footer{
+    background-color: #33647E;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    margin-top: 5rem;
+    font-family: "New York", Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;;
+}
+footer span{
+    margin: 0.5rem;
+}
+.icons img{
+    margin: 0.5rem;
+}
+.pay{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 30%;
+    margin: auto;
+    background: #FBFBFB;
+    padding: 2rem 1rem;
+    border-radius: 5px;
+    color: rgba(77, 77, 77, 0.75);
+}
+.form-control{
+    margin-bottom: 1rem;
+}
+.pay button{
+    background-color: #3DB760;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+
+
+
+
+
+@media(max-width:570px){
+    .nav-item{
+        margin-left: 0rem ;
+    }
+    .pay{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        width: 95%;
+        margin: auto;
+        background: #FBFBFB;
+        padding: 2rem 10px;
+        border-radius: 5px;
+        color: rgba(77, 77, 77, 0.75);
+    }
+    
+}
+
+
+
+@media(min-width:571px) and (max-width:768px){
+    .nav-item{
+        margin-left: 0rem ;
+    }
+    .pay{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        width: 50%;
+        margin: auto;
+        background: #FBFBFB;
+        padding: 2rem 1rem;
+        border-radius: 5px;
+        color: rgba(77, 77, 77, 0.75);
+    }
+    
+}

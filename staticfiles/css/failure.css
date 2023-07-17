@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "New York", Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;;
+}
+nav{
+    font-family: "New York", Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;;
+}
+.navbar-brand img{
+    width: 3rem;
+} 
+nav form a{
+    margin-right: 2rem;
+    text-decoration: none;
+    color: rgba(77, 77, 77, 0.75);
+    font-size: 1.2rem;
+    display: inline-block;
+}
+.nav-item{
+    margin-left: 2rem ;
+}
+footer{
+    background-color: #33647E;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    margin-top: 5rem;
+    font-family: "New York", Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;;
+}
+footer span{
+    margin: 0.5rem;
+}
+.icons img{
+    margin: 0.5rem;
+}
+.success-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.success{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+.success-text{
+    text-align: center;
+    margin-top: 7rem;
+}
+.success-text h2{
+    color: rgba(77, 77, 77, 0.75);
+    font-size: 50px;
+    margin-top: 1rem;
+}
+.success-text p{
+    color: rgba(77, 77, 77, 0.75);
+    font-size: 20px;
+}
+.success-text button{
+    background:#F15249;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    border: none;
+}
+.success-text img{
+    width:5rem;
+    height: 5rem;
+}
+.success-img img{
+    width: 100%;
+}
+
+
+
+
+
+
+@media(max-width:570px){
+    .nav-item{
+        margin-left: 0rem ;
+    }
+    .success-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+    .success-text{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
+    
+}
+
+
+
+@media(min-width:571px) and (max-width:768px){
+    .nav-item{
+        margin-left: 0rem ;
+    }
+   
+    .success-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+    .success-text{
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
