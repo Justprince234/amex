@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'amex.apps.AmexConfig',
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
+    'rentals.apps.RentalsConfig'
 ]
 
 MIDDLEWARE = [

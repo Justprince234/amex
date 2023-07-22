@@ -15,7 +15,7 @@ def properties(request):
 def property(request, slug):
     """Displays the blog page."""
     property = get_object_or_404(Property, slug=slug, available=True)
-    template_name = 'product.html'
+    template_name = 'pro.html'
     return render(request, template_name, {'properties': property})
 
 def contact_us(request):

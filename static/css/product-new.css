@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    font-family: "New York", Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;;
+}
+nav{
+    font-family: "New York", Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;;
+}
+.navbar-brand img{
+    width: 3rem;
+} 
+nav form a{
+    margin-right: 2rem;
+    text-decoration: none;
+    color: rgba(77, 77, 77, 0.75);
+    font-size: 1.2rem;
+    display: inline-block;
+}
+.nav-item{
+    margin-left: 2rem ;
+}
+footer{
+    background-color: #33647E;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    margin-top: 5rem;
+    font-family: "New York", Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;;
+}
+footer span{
+    margin: 0.5rem;
+}
+.icons img{
+    margin: 0.5rem;
+}
+.product-img img{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.product{
+    
+    margin-top: 2rem;
+    color: rgba(77, 77, 77, 0.75);   
+}
+.bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    margin-top: 2rem;
+}
+.nav-link{
+    color: rgba(77, 77, 77, 0.75) !important ;
+}
+.price{
+    border: 1px solid #33647E;
+    border-radius: 5px;
+    padding: 1rem;
+    height: auto;
+    color: rgba(77, 77, 77, 0.75);   
+}
+.price button{
+    background: #3DB760;
+    padding: 10px 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.house{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.house img{
+    width: 100%;
+    height: auto;
+}
+.houses{
+    display: grid;
+    grid-template-rows: 1fr;
+}
+.houses img{
+    height: 100%;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+
+@media(max-width:570px){
+    .nav-item{
+        margin-left: 0rem ;
+    }
+    .product{
+        margin-top: 2rem;
+    }
+    .bottom{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        margin-top: 2rem;
+    }
+}
+
+
+
+@media(min-width:571px) and (max-width:768px){
+    .nav-item{
+        margin-left: 0rem ;
+    }
+    .product{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+}

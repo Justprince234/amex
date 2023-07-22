@@ -36,6 +36,34 @@ class Property(models.Model):
     def get_absolute_url(self):
         return reverse('properties:property', args=[self.slug])
     
+    @property
+    def image1URL(self):
+        if self.photo_1:
+            return self.photo_1.url
+        else:
+            return "/static/img/Placeholder.png"
+    
+    @property
+    def image2URL(self):
+        if self.photo_2:
+            return self.photo_2.url
+        else:
+            return "/static/img/Placeholder.png"
+    
+    @property
+    def image3URL(self):
+        if self.photo_3:
+            return self.photo_3.url
+        else:
+            return "/static/img/Placeholder.png"
+        
+    @property
+    def image4URL(self):
+        if self.photo_4:
+            return self.photo_4.url
+        else:
+            return "/static/img/Placeholder.png"
+    
 class Contact(models.Model):
     full_name = models.CharField(max_length=100)
     email = models.EmailField()

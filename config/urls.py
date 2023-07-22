@@ -28,7 +28,9 @@ urlpatterns = [
     path('store/', include('store.urls', namespace='store')),
     path('amex/', include('amex.urls', namespace='amex')),
     path('cart/', include('cart.urls', namespace='cart')),
-    path('orders/', include('orders.urls', namespace='orders'))
+    path('orders/', include('orders.urls', namespace='orders')),
+    path('travels/', include('travels.urls', namespace='travels')),
+    path('rentals/', include('rentals.urls', namespace='rentals'))
 ]
 
 if settings.DEBUG: 

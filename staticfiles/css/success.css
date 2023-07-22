@@ -34,41 +34,24 @@ footer span{
 .icons img{
     margin: 0.5rem;
 }
-.success-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.success{
-    margin-top: 5rem;
-    margin-bottom: 2rem;
-}
-.success-text{
-    text-align: center;
-    margin-top: 3rem;
-}
-.success-text h2{
-    color: rgba(77, 77, 77, 0.75);
-    font-size: 50px;
-    margin-top: 1rem;
-}
-.success-text p{
-    color: rgba(77, 77, 77, 0.75);
-    font-size: 20px;
-}
-.success-text button{
-    background:#32BA7C;
-    color: white;
-    padding: 10px 20px;
+.pay{
+    margin-top: 7rem !important;
+    margin-bottom: 3rem;
+    width: 30%;
+    margin: auto;
+    background: #FBFBFB;
+    padding: 2rem 1rem;
     border-radius: 5px;
-    margin-top: 1rem;
-    border: none;
+    color: rgba(77, 77, 77, 0.75);
+    text-align: center;
 }
-.success-text img{
-    width:5rem;
+.pay img{
+    width: 7rem;
 }
-.success-img img{
-    width: 100%;
+.form-control{
+    margin-bottom: 1.5rem;
 }
+
 
 
 
@@ -79,12 +62,16 @@ footer span{
     .nav-item{
         margin-left: 0rem ;
     }
-    .success-container{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 2rem;
+    .pay{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        width: 95%;
+        margin: auto;
+        background: #FBFBFB;
+        padding: 2rem 10px;
+        border-radius: 5px;
+        color: rgba(77, 77, 77, 0.75);
     }
-    
     
 }
 
@@ -94,10 +81,15 @@ footer span{
     .nav-item{
         margin-left: 0rem ;
     }
-   
-    .success-container{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 2rem;
+    .pay{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        width: 50%;
+        margin: auto;
+        background: #FBFBFB;
+        padding: 2rem 1rem;
+        border-radius: 5px;
+        color: rgba(77, 77, 77, 0.75);
     }
+    
 }

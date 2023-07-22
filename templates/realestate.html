@@ -23,7 +23,7 @@
                 <a class="nav-link" aria-current="page" href="{% url 'store:products' %}">SHOP</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/booking.html">FLIGHT BOOKING</a>
+                <a class="nav-link" href="{% url 'travels:bookings' %}">FLIGHT BOOKING</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'properties:properties' %}">REAL ESTATE</a>
@@ -68,7 +68,7 @@
                     <h4>{{product.title}}</h4>
                     <!-- <p> <span style="color: #FFBD00"> &starf; &bigstar; &starf; &starf; &starf;</span> <span>(576)</span> </p> -->
                     <p>${{product.price}}</p>
-                    <a href="{{product.get_absolute_url}}"><button>Buy Now</button></a>
+                    <a href="{{product.get_absolute_url}}"><button>Contact Realtor</button></a>
                 </div>
             </div>
           {% endfor %}

@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slip</title>
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/slip.css' %}">
+</head>
+<body>
+  <nav>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="{% url 'core:home' %}"><img src="{% static 'img/dls-logo-bluebox-solid.svg' %}" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="{% url 'store:products' %}">SHOP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'travels:bookings' %}">FLIGHT BOOKING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'properties:properties' %}">REAL ESTATE</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex" role="search">
+              <!-- <a href="#"><img src="/img/search-interface-symbol.png" alt=""></a>
+              <a href="#"><img src="/img/user.png" alt=""></a>
+              <a href="#"><img src="/img/shopping-bag.png" alt=""></a> -->
+              <!-- <a href="/login.html">Login</a>
+              <a href="/signup.html">Signup</a> -->
+            </form>
+          </div>
+        </div>
+    </nav>
+</nav>
+    
+    <section class="container">
+        <div>
+            <p>We have made the following booking for you:</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Booking Reference: <span style="font-weight: bolder;">SASADDAA4</span></p>
+                </div>
+                <div class="col-md-6">
+                    <p>Date of Issue: <span style="font-weight: bold;"> 26th March, 2012</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered ">
+                <thead>
+                  <tr>
+                    <th scope="col">Contact Information</th>
+                    <th scope="col">Passenger Information</th>
+                    <th scope="col">Flight Ticket Numbers</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mr Ami Joeseph 08148424849</td>
+                    <td>Mr Ami Joeseph </td>
+                    <td>ETKT000 939399290302-0i3i</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div>
+            <h6>Departing:</h6>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Date:</th>
+                        <th scope="col">Sat 08 Jul 23</th>
+                        <th scope="col"></th>
+                        <th scope="col">All Times Local</th>
+                        <th>Flight-Number</th>
+                        <th>Cabin (Book Class)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>From</th>
+                        <td>Abuja </td>
+                        <td>Departure</td>
+                        <td>13:40</td>
+                        <td>QI 0503 (HK)</td>
+                        <td>Y (B)</td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                          <th>To</th>
+                          <td>Calabar </td>
+                          <td>Arrive</td>
+                          <td>14:40</td>
+                          <td></td>
+                          <datagrid></datagrid>
+                        </tr>
+                      </tbody>
+                </table>
+            </div>
+            
+        </div>
+        <div>
+            <p>FlightInfo1:</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error alias deleniti provident doloremque nemo itaque perspiciatis dolore modi, aliquam amet sint fugit veritatis consequuntur praesentium, veniam delectus cum facere! Placeat ab aliquam laudantium quam et aut voluptas libero exercitationem? Rerum, blanditiis labore natus quidem officia, eum commodi, debitis aperiam veniam reprehenderit facere deserunt laborum voluptatibus expedita autem consectetur ipsum eaque! Dolore veritatis eos optio! Quidem quas animi numquam sed tempore, minus commodi nam aperiam veritatis excepturi voluptatibus quam a officiis illum laborum nisi rem eveniet officia pariatur vitae voluptatem provident deserunt. Possimus, placeat praesentium! Dolorem hic ducimus atque tempora reprehenderit iusto ad aperiam animi asperiores inventore eos sequi, rem minus quaerat possimus incidunt quo, rerum harum. Ex ut consequatur maiores et fugiat veniam, sed dicta pariatur. Reiciendis quos iste aliquid dicta harum adipisci esse ea optio? Saepe quis est quidem suscipit iure officiis dolor harum necessitatibus fugiat assumenda nisi, placeat ad quam velit veritatis. Impedit dignissimos nihil quis? Officia non amet perspiciatis natus inventore, itaque laboriosam. Labore iure, omnis culpa, in, enim excepturi atque libero quos officiis tempore minima? Aut quae, quos nostrum repellendus perferendis illo similique aspernatur quo, architecto quas eos qui sit magni ut vero, possimus tempora!</p>
+        </div>
+    </section>
+
+      <footer>
+        <div>
+          <h3>Quick Links</h3>
+          <p><span>FAQ</span> <span>Order</span> <span>Contact</span> <span>Privacy Policy</span> <span>Terms of Service</span> <span>Refund Policy</span> <span>Shopping Policy</span> <span>Our team</span></p>
+          <p><span>Become a Co-Creator</span> <span>Products</span> <span>Careers</span> <span>Wholesale</span> <span>Subscribe to our emails</span> 
+        </div>
+        <div class="icons">
+          <img src="{% static 'images/icons/facebook (8).png' %}" alt=""> <img src="{% static 'images/icons/instagram-logo.png' %}" alt=""> <img src="{% static 'images/icons/telegram.png' %}" alt=""> <img src="{% static 'images/icons/tik-tok.png' %}" alt=""> <img src="{% static 'images/icons/twitter (1).png' %}" alt=""> <img src="{% static 'images/icons/whatsapp.png' %}" alt=""> <img src="{% static 'images/icons/youtube (1).png' %}" alt="">
+      </div>
+      </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>

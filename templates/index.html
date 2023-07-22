@@ -23,7 +23,11 @@
                     <a class="nav-link" aria-current="page" href="{% url 'store:products' %}">SHOP</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">FLIGHT BOOKING</a>
+                    <a class="nav-link" href="{% url 'rentals:rentals' %}">VEHICLE RENTALS</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'travels:bookings' %}">FLIGHT BOOKING</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="{% url 'properties:properties' %}">REAL ESTATE</a>
@@ -43,7 +47,7 @@
                     {% endwith %}
                   {% if user.is_authenticated %}
                   <a href="">Hi {{ user.username }}!</a>
-                  <a style="color: green;" href="{% url 'core:dashboard' %}">Dashboard</a>
+                  <!-- <a style="color: green;" href="{% url 'core:dashboard' %}">Dashboard</a> -->
                   <a style="color: brown;" href="{% url 'accounts:logout' %}">Logout</a>
                   {% else %}
                   <a href="{% url 'accounts:login' %}">Login</a>

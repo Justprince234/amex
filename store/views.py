@@ -16,7 +16,7 @@ def products(request):
 
 def product(request, slug):
     """ A view to show individual product details """
-    template = 'product-details.html'
+    template = 'pro-details.html'
     product = get_object_or_404(Product, slug=slug, available=True)
     cart_product_form = CartAddProductForm()
 
