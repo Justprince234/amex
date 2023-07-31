@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from . models import Property, Contact
+from . models import Property, Contact, Apartment
 
 
 admin.site.site_header = 'Pay Everything with AMEX'
@@ -17,6 +17,16 @@ class PropertyAdmin(admin.ModelAdmin):
     list_per_page = 25
 
 admin.site.register(Property, PropertyAdmin)
+
+class ApartmentAdmin(admin.ModelAdmin):
+
+    list_display = ('title', 'available')
+    prepopulated_fields = {"slug": ("title",)}
+    list_display_links = ('title',)
+    search_fields = ('title', 'country')
+    list_per_page = 25
+
+admin.site.register(Apartment, ApartmentAdmin)
 
 class ContactAdmin(admin.ModelAdmin):
     

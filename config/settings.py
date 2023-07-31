@@ -57,7 +57,8 @@ INSTALLED_APPS = [
     'amex.apps.AmexConfig',
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
-    'rentals.apps.RentalsConfig'
+    'rentals.apps.RentalsConfig',
+    'blog.apps.BlogConfig'
 ]
 
 MIDDLEWARE = [
@@ -109,7 +110,6 @@ DATABASES = {
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-
 
 cloudinary.config( 
   cloud_name = str(os.getenv("CLOUD_NAME")), 

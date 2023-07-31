@@ -3,14 +3,21 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 
-from .models import Property, Contact
+from .models import Property, Contact, Apartment
 
 def properties(request):
     """Displays the properties page."""
     properties  = Property.objects.filter(available=True)
-    template_name = 'realestate.html'
-    context = {'properties': properties}
+    apartments  = Apartment.objects.filter(available=True)
+    template_name = 'properties.html'
+    context = {'properties': properties, 'apartments':apartments}
     return render(request, template_name, context)
+
+def apartment(request, slug):
+    """Displays the blog page."""
+    apartment = get_object_or_404(Apartment, slug=slug, available=True)
+    template_name = 'apartment.html'
+    return render(request, template_name, {'apartment': apartment})
 
 def property(request, slug):
     """Displays the blog page."""

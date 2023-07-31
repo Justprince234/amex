@@ -1,0 +1,161 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everything-on-Amex - Real Estate</title>
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/realestate.css' %}">
+</head>
+<body>
+  <nav>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="{% url 'core:home' %}"><img src="{% static 'img/dls-logo-bluebox-solid.svg' %}" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="{% url 'store:products' %}">SHOPPING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'rentals:rentals' %}">CAR RENTALS</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'travels:bookings' %}">FLIGHT BOOKING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'properties:properties' %}">SERVICE APARTMENTS & <br>REAL ESTATES</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex" role="search">
+              <!-- <a href="#"><img src="/img/search-interface-symbol.png" alt=""></a>
+              <a href="#"><img src="/img/user.png" alt=""></a>
+              <a href="#"><img src="/img/shopping-bag.png" alt=""></a> -->
+              <!-- <a href="/login.html">Login</a>
+              <a href="/signup.html">Signup</a> -->
+            </form>
+          </div>
+        </div>
+    </nav>
+</nav>
+  <center>
+    {% for message in messages %}
+      <p style="color: blue">{{message}}</p>
+    {% endfor %}
+  </center>
+    <div class="clothes container">
+        <div class="title">
+            <div>
+                <h3>Service Apartments & Real Estates</h3>
+            </div>
+            <div class="title-right">
+                <p></p>
+            </div>
+        </div>
+        <div class="tabs">
+          <div class="tabs__sidebars">
+            <button class="tabs__button tabs__button--active" data-for-tab="1">Service Apartments</button>
+            <button class="tabs__button" data-for-tab="2">Real Estates</button>
+          </div>
+          <div class="tabs__content tabs__content--active" data-tab="1">
+            <h2>Service Apartments</h2>
+            <div class="items">
+              {% for apartment in apartments %}
+                <div class="card">
+                    <div class="card-img">
+                      <a href="{{apartment.get_absolute_url}}">
+                        <img src="{{apartment.photo_main.url}}" alt="">
+                      </a>
+                    </div>
+                    <div class="card-text">
+                        <h4>{{apartment.title}}</h4>
+                        <!-- <p> <span style="color: #FFBD00"> &starf; &bigstar; &starf; &starf; &starf;</span> <span>(576)</span> </p> -->
+                        <p>${{apartment.price}}</p>
+                        <a href="{{apartment.get_absolute_url}}"><button>Contact Realtor</button></a>
+                    </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+
+          <div class="tabs__content" data-tab="2">
+            <h2>Real Estates</h2>
+            <div class="items">
+              {% for product in properties %}
+                <div class="card">
+                    <div class="card-img">
+                      <a href="{{product.get_absolute_url}}">
+                        <img src="{{product.photo_main.url}}" alt="">
+                      </a>
+                    </div>
+                    <div class="card-text">
+                        <h4>{{product.title}}</h4>
+                        <!-- <p> <span style="color: #FFBD00"> &starf; &bigstar; &starf; &starf; &starf;</span> <span>(576)</span> </p> -->
+                        <p>${{product.price}}</p>
+                        <a href="{{product.get_absolute_url}}"><button>Contact Realtor</button></a>
+                    </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+
+        </div>
+        
+        
+    </div>
+
+   
+
+    
+    
+      <footer>
+        <div>
+          <h3>Quick Links</h3>
+          <p><span>FAQ</span> <span>Order</span> <span>Contact</span> <span>Privacy Policy</span> <span>Terms of Service</span> <span>Refund Policy</span> <span>Shopping Policy</span> <span>Our team</span></p>
+          <p><span>Become a Co-Creator</span> <span>Products</span> <span>Careers</span> <span>Wholesale</span> <span>Subscribe to our emails</span> 
+        </div>
+        <div class="icons">
+          <img src="{% static 'images/icons/facebook (8).png' %}" alt=""> <img src="{% static 'images/icons/instagram-logo.png' %}" alt=""> <img src="{% static 'images/icons/telegram.png' %}" alt=""> <img src="{% static 'images/icons/tik-tok.png' %}" alt=""> <img src="{% static 'images/icons/twitter (1).png' %}" alt=""> <img src="{% static 'images/icons/whatsapp.png' %}" alt=""> <img src="{% static 'images/icons/youtube (1).png' %}" alt="">
+        </div>
+      </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+    <script>
+      function setupTabs(){
+        document.querySelectorAll(".tabs__button").forEach(button => {
+          button.addEventListener("click", () => {
+            const sideBar = button.parentElement;
+            const tabsContainer = sideBar.parentElement;
+            const tabNumber = button.dataset.forTab;
+            const tabToActivate = tabsContainer.querySelector(`.tabs__content[data-tab="${tabNumber}"]`);
+
+            sideBar.querySelectorAll(".tabs__button").forEach(button => {
+              button.classList.remove("tabs__button--active");
+            });
+
+            tabsContainer.querySelectorAll(".tabs__content").forEach(tab => {
+              tab.classList.remove("tabs__content--active");
+            });
+
+            button.classList.add("tabs__button--active");
+            tabToActivate.classList.add("tabs__content--active");
+
+          });
+        });
+      }
+      document.addEventListener("DOMContentLoaded", () => {
+        setupTabs();
+      });
+    </script>
+  </body>
+</html>
